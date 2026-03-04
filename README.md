@@ -1,1 +1,1 @@
-the script prints current working dir when executed
+The file 0-iam_betty changes the user to betty
