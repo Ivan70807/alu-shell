@@ -1,2 +1,2 @@
 #!/bin/bash
-for f in $(find . -type f -name "*.gif" -printf "%f\n" | sort -f); do echo "${f%.gif}"; done
+while IFS= read -r f; do echo "${f%.gif}"; done < <(find . -type f -name "*.gif" -printf "%f\n" | sort -f)
