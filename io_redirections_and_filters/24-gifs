@@ -1,5 +1,2 @@
 #!/bin/bash
-find . -type f -name "*.gif" -printf "%f\n" | sort -f | while IFS= read -r f
-do
-    echo "${f%.gif}"
-done
+find . -type f -name "*.gif" -o -name ".*.gif" -printf "%f\n" | sort -f | cut -d . -f 1- --complement -s --output-delimiter=.
