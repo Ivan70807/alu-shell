@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 #comment
-[ -s apache-access.log ] && awk '{print $1, $9}' apache-access.log | sort | uniq -c | sort -nr | awk '{$1=$1; print $0}'
+[ ! -s apache-access.log ] && exit
+awk '{print $1, $9}' apache-access.log | sort | uniq -c | sort -nr | awk '{$1=$1; print $0}'
