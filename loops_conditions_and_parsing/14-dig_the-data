@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #comment
-awk '{print $1 " " $9}' apache-access.log | sort | uniq -c | sort -nr | awk '{print $1 " " $2 " " $3}'
+awk '{print $1, $9}' apache-access.log | sort | uniq -c | sort -nr | awk '{$1=$1; print $0}'
 
