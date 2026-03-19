@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #comment
-hour=o
+hour=0
 
 while [ "$hour" -le 12 ]
 do
