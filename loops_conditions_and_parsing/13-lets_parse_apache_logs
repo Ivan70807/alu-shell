@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#comment
+while read -r ip ident user time request status size rest
+do
+echo "$ip $status"
+done < apache-access.log
