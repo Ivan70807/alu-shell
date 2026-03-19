@@ -2,7 +2,7 @@
 #comment
 hour=0
 
-while [ "$hour" -le 23 ]
+while [ "$hour" -le 11 ]
 do
 echo "Hour: $hour"
 
