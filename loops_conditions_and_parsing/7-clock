@@ -2,7 +2,7 @@
 #comment
 hour=o
 
-while[ "$hour" -le 12 ]
+while [ "$hour" -le 12 ]
 do
 minute=1
 while ["$minute" -le 59 ]
