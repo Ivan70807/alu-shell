@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #comment
-awk '{count[$1" "$9]++} END {for (i in count) print count[i], i}' | sort -rn | grep .
+awk '$9 ~ /^[45]/ {count[$1" "$9]++} END {for (i in count) print count[i], i}' | sort -rn
 
